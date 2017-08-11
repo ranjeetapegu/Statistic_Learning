@@ -30,22 +30,19 @@ abline(h=0.5,col="red",lty=2)
 ![](Asymptotics_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
 
 
-We know from the **Central Limit Theorem** that for large n, the sample mean is normal with mean $\mu$ and standard deviation as $\frac{\sigma}{\sqrt(n)}$.
+We know from the **Central Limit Theorem** that for large n, the sample mean is normal with mean σ and standard deviation as σ/(√n).
 
-In binomial distribution, *p* represents the *probability or proportion of success*, the variance $\sigma^2$ is p(1-p)  
-
-The standard error of the sample mean:  
-$\frac{\sigma}{\sqrt{n}}$ = $\frac{\sqrt{p(1-p)}}{\sqrt{n}} = \sqrt{\frac{p(1-p)}{n}}$   
+In binomial distribution, *p* represents the *probability or proportion of success*, the variance σ^2 is p-2σ.
+The standard error of the sample mean: σ/(√n) = √(p(1-p)/n)  
 
 
-The 95% confidence interval of p is then given by $p +2\sigma$ and $p - 2\sigma$  
-or $p + 2\sqrt{\frac{p(1-p)}{n}}$ and $p - 2\sqrt{\frac{p(1-p)}{n}}$
+The 95% confidence interval of p is then given by p +/- 2σ or p +/- 2 *(sqrt(p(1-p)/n)
 
-*As we know that 95% of the area under a normal curve is within $2\sigma$ of the mean*.A important concern is what is true value of p; that's what we're trying to estimate. 
+*As we know that 95% of the area under a normal curve is within 2σ of the mean*.A important concern is what is true value of p; that's what we're trying to estimate. 
 
 **How can we compute a confidence interval if we don't know p(1-p)? **  
 
-We could be conservative and try to maximize it so we get the largest possible confidence interval.Calculus tells us that p(1-p) is maximized when **p=1/2**, so we get the biggest 95% confidence interval when we set *p=1/2* in the formula $p + c(-1,1)*\sqrt{\frac{1}{n}}$.
+We could be conservative and try to maximize it so we get the largest possible confidence interval.Calculus tells us that p(1-p) is maximized when **p=1/2**, so we get the biggest 95% confidence interval when we set *p=1/2* in the formula p +/- (1/√n)
 
 **Example :**
 Suppose you were running for office and your pollster polled 400 people. Of these 240 claimed they were going to vote for you. You'd like to estimate the true proportion of people who will vote for you and you want to be 95% confident of your estimate.
