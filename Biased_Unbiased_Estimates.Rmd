@@ -1,0 +1,16 @@
+## UNBIASED ESTIMATES ##
+In Statistical Inference, it is important to able to estimate the population parameters ( such as population mean and variance) from the corresponding sample statistics (such as sample mean and variance).
+
+**Biased and UnBiased Estimates**  
+If the mean of the sampling distribution of a statistic equals the corresponding population parameters, the statistic is called an *unbaised estimator* of paramter , otherwise , it is a biased estimator. The corresponding value of such statistics are called unbiased or biased estimates, respectively.
+
+**Example of Unbiased Estimate: ** The mean of the sampling distribution of means equals to the population mean $$\mu_{\bar{X}}= \mu$$ So the sample mean $\bar{X}$ is an unbaised estimate of the population mean $\mu$.
+
+**Example of Biased Estimate :** The mean of the sampling distribution of variance is  $$\mu_{s^2} = \frac{N-1}{N}\sigma^2$$  where $\sigma^2$ is the population variance and N is the sample size. Thus the sample variance $s_2$ is a biased estimate of population variance $\sigma^2$. By using the modified variance
+
+$${\hat{s}}^2 =\frac{N}{N-1}s^2$$ we find $\mu_{s^2} = \sigma^2$, so that ${\hat{s}}^2$ is an unbiased estimate of $\sigma^2$. However, $\hat{s}$ is a biased estimate of $\sigma$. 
+
+## EFFICIENT ESTIMATES##
+If the sampling distribution of two statistics have same mean, then the statistic with smaller variance is called *efficient estimator* of the mean, while the other is called *inefficient estimator*. 
+
+**Example** The sampling distribution of the mean and median both have the same mean (which equals to population mean). But the variance of sampling distribution of mean is lesser than variance of sampling distribution of median, so mean gives efficient estimate and median gives inefficient estimate.
